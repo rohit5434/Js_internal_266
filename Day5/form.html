@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Form</title>
+</head>
+<body>
+    <form action="" id="fid">
+        <label for="username">UserName:</label>
+        <input type="text" id="user" placeholder="enter username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="enter password">
+        <br>
+        <button>submit</button>
+
+        <p style="color: red;" id="pid"> </p>
+    </form>
+        
+        <script>
+            document.getElementById("fid").addEventListener("submit", (event)=>{
+            event.preventDefault(); //prevent from reloading
+                
+             let namevalue = document.getElementById("user").value.trim();
+             let err = document.getElementById("pid");
+
+             if(namevalue ==""){
+
+                err.style.color ="red"
+                err.innerHTML = "Value can not be empty"
+
+             }else{
+
+                err.style.color ="blue";
+                err.innerHTML="From submit successfully"
+
+             }
+
+                
+            });
+
+        </script>
+
+
+</body>
+</html>

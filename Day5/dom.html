@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dom examople with js</title>
+</head>
+<body>
+    <h1 id="hid1"> This is main heading</h1>
+    <h2 id="hid2"> This is sub heading</h2>
+    <button onclick="change()">Click</button><br>
+    <button onclick="change2()">Click</button><br>
+    <button  id="bid" >second</button><br>
+    <button id="bid1">Change caption </button><br>
+    <button id="bid2">Change Colour</button><br>
+    <button id="bid3">Red</button><br>
+    <button id="bid4">Blue</button><br>
+    <button id="bid5">green</button><br>
+
+
+    <script>
+        //event listener
+        document.getElementById("bid").addEventListener("click" , function(){
+            document.getElementById("hid1").innerHTML="new value";
+        });
+       
+       //caption
+        document.getElementById("bid1").addEventListener("click" , function(){
+            document.getElementById("hid1").innerText = "new text";
+             document.getElementById("hid2").innerText = "new text";
+        });
+        //colour
+         document.getElementById("bid2").addEventListener("click" , function(){
+            document.getElementById("hid1").style.color = "blue";
+             document.getElementById("hid2").style.color = "yellow";
+        });
+
+        // background clour
+          document.getElementById("bid3").addEventListener("click" , function(){
+           document.body.style.backgroundColor="red";
+        });
+        document.getElementById("bid4").addEventListener("click" , function(){
+           document.body.style.backgroundColor="blue";
+        });
+        document.getElementById("bid5").addEventListener("click" , function(){
+           document.body.style.backgroundColor="green";
+        });
+
+
+        function change(){
+         document.getElementById("hid1").innerText = "new value";
+         
+        }
+
+        function change2(){
+         document.getElementById("hid2").innerText = "new value";
+         
+        }
+
+        </script>
+</body>
+</html>
