@@ -1,0 +1,27 @@
+<!--Create an HTML page with a <p> tag and a <button>. 
+When user clicks the button, change text to "Welcome to JavaScript!" 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="pid">This paragraph content is now going to 
+        change on button click</P>
+
+    <button id="bid">click</button>
+
+    <script>
+        let para = document.getElementById("pid");
+        let btn = document.getElementById("bid");
+
+        btn.addEventListener("click",() => para.innerHTML="Welcome To JavaScript");
+
+        
+    </script>
+</body>
+</html>

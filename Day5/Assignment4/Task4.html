@@ -1,0 +1,29 @@
+<!--Task 4: Show/Hide Paragraph 
+Create a paragraph and a button. 
+Click button → hide paragraph 
+Click again → show paragraph 
+(hint: style.display = "none" / "block")-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pid"> This Paragraph get invisible if you click a button</p>
+<button id="bid">CLICK</button>
+<script>
+    document.getElementById("bid").addEventListener("click" , ()=>{
+         let p = document.getElementById("pid");
+
+        if (p.style.display === "none") {
+            p.style.display = "block";
+        } else {
+            p.style.display = "none";
+        }
+    });
+</script>
+</body>
+</html>

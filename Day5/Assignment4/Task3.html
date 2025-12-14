@@ -1,0 +1,41 @@
+<!--Task 3: Image Switcher 
+Create an <img> tag and two buttons Next & Previous. 
+Clicking buttons should switch between two images. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+<img id="img" 
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM9LMnNLr5ulFWf0Tx7FSkk_ibzqEntRMHOA&s" 
+width="300">
+
+<br><br>
+
+<button id="prev">Previous</button>
+<button id="next">Next</button>
+
+<script>
+    let images = [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM9LMnNLr5ulFWf0Tx7FSkk_ibzqEntRMHOA&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh7dLK3PNgayXCl5XS-LqHDafdYfyhfNw-FQ&s"
+    ];
+
+    let index = 0;
+    let img = document.getElementById("img");
+
+    document.getElementById("next").addEventListener("click", () => {
+        index = (index + 1) % images.length;
+        img.src = images[index];
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+        index = (index - 1 + images.length) % images.length;
+        img.src = images[index];
+    });
+</script>
+
+</body>
+</html>

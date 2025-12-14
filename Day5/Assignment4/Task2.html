@@ -1,0 +1,33 @@
+<!--Create an HTML page with a <p> tag and a <button>. 
+When user clicks the button, change text to "Welcome to JavaScript!" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="b1">RED</button>
+    <button id="b2">GREEN</button>
+    <button id="b3">BLUE</button>
+
+    <script>
+    let btn1 = document.getElementById("b1");
+    let btn2 = document.getElementById("b2");
+    let btn3 = document.getElementById("b3");
+
+    btn1.addEventListener("click", ()=>{
+        document.body.style.backgroundColor = "red";
+    });
+
+    btn2.addEventListener("click" , ()=>{
+        document.body.style.backgroundColor = "Green";
+    });
+
+    btn3.addEventListener("click", ()=>document.body.style.backgroundColor="blue");
+
+    </script>
+</body>
+</html>
