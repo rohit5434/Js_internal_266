@@ -1,0 +1,38 @@
+<!--Task 5: Counter App 
+Create two buttons + Increase & - Decrease. 
+Display count in <span>. 
+Count cannot go below 0.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <span id="sp1"> 0 </span>
+    <br>
+
+    <button id="b1">Increase</button>
+    <button id="b2">Descrease</button>
+    <script>
+
+        let span = document.getElementById("sp1");
+
+        let cnt =0;
+        document.getElementById("b1").addEventListener("click", ()=>{
+             cnt++;
+            span.innerText = cnt;
+        });
+         document.getElementById("b2").addEventListener("click", ()=>{
+             if (cnt > 0) {
+                cnt--;
+                span.innerText = cnt;
+            }
+        });
+
+    </script>
+</body>
+</html>
