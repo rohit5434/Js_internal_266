@@ -1,0 +1,25 @@
+<!-- Form Input Reader 
+Create a form with input name and a button. 
+When clicked → print user name in output area.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    UserName: <input type="text" id="name" placeholder="Enter your name"> <br>
+     &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id="b1">Submit</button>
+
+    <p id="pid"></p>
+
+    <script>
+        document.getElementById("b1").addEventListener("click" , ()=>{
+            let username = document.getElementById("name").value;
+            document.getElementById("pid").innerText = username;
+        });
+    </script>
+</body>
+</html>
