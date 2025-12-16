@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+            document.getElementById("fid").addEventListener("submit", (event)=>{
+            event.preventDefault(); //prevent from reloading
+                
+             let namevalue = document.getElementById("user").value.trim();
+             let err = document.getElementById("pid");
+
+             if(namevalue ==""){
+
+                err.style.color ="red"
+                err.innerHTML = "Value can not be empty"
+
+             }else{
+
+                err.style.color ="blue";
+                err.innerHTML="From submit successfully"
+
+             }
+                
+            });
+
+        </script>
+</body>
+</html>
