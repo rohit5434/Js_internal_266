@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Project Demo</title>
+</head>
+<body>
+
+<center><h1>Demo of Online Project</h1></center>
+<hr color="green">
+
+<center>
+Home &nbsp;&nbsp; Gallery &nbsp;&nbsp; Menu3 &nbsp;&nbsp; Menu4 &nbsp;&nbsp; Menu5
+</center>
+
+<hr color="green">
+
+<!-- Left Section -->
+<div style="position:absolute; left:0%; width:33%; height:84%; background-color:aqua;">
+    <center>
+        <h3>Headings</h3>
+        Heading 1 <br>
+        Heading 2 <br>
+        Heading 3
+    </center>
+</div>
+
+<!-- Middle Section -->
+<div style="position:absolute; left:33%; width:33%; height:84%; background-color:rosybrown;">
+    <center><h3>Important Notice</h3></center>
+    <marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()">
+        <center>
+            Notice 1 <br>
+            Notice 2 <br>
+            Notice 3 <br>
+            Notice 4 <br>
+            Notice 5 <br>
+            Notice 6 <br>
+            Notice 7
+        </center>
+    </marquee>
+</div>
+
+<!-- Right Section (LOGIN FIXED) -->
+<div style="position:absolute; left:66%; width:33%; height:84%; background-color:aquamarine;">
+    <center>
+        <h3>Login</h3>
+
+        <form action="login.html" method="get">
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td>
+                        <input type="text" name="username" placeholder="Enter username" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                        <input type="password" name="password" placeholder="Enter password" required>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <button type="submit">Login</button>
+            <button type="reset">Cancel</button>
+
+            <br><br>
+
+            <a href="registration.html">New user? Sign up</a>
+        </form>
+    </center>
+</div>
+
+</body>
+</html>
