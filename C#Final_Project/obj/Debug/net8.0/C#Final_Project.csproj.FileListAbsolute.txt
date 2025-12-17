@@ -1,0 +1,15 @@
+/workspaces/Js_internal_266/C#Final_Project/bin/Debug/net8.0/C#Final_Project
+/workspaces/Js_internal_266/C#Final_Project/bin/Debug/net8.0/C#Final_Project.deps.json
+/workspaces/Js_internal_266/C#Final_Project/bin/Debug/net8.0/C#Final_Project.runtimeconfig.json
+/workspaces/Js_internal_266/C#Final_Project/bin/Debug/net8.0/C#Final_Project.dll
+/workspaces/Js_internal_266/C#Final_Project/bin/Debug/net8.0/C#Final_Project.pdb
+/workspaces/Js_internal_266/C#Final_Project/obj/Debug/net8.0/C#Final_Project.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Js_internal_266/C#Final_Project/obj/Debug/net8.0/C#Final_Project.AssemblyInfoInputs.cache
+/workspaces/Js_internal_266/C#Final_Project/obj/Debug/net8.0/C#Final_Project.AssemblyInfo.cs
+/workspaces/Js_internal_266/C#Final_Project/obj/Debug/net8.0/C#Final_Project.csproj.CoreCompileInputs.cache
+/workspaces/Js_internal_266/C#Final_Project/obj/Debug/net8.0/C#Final_Project.sourcelink.json
+/workspaces/Js_internal_266/C#Final_Project/obj/Debug/net8.0/C#Final_Project.dll
+/workspaces/Js_internal_266/C#Final_Project/obj/Debug/net8.0/refint/C#Final_Project.dll
+/workspaces/Js_internal_266/C#Final_Project/obj/Debug/net8.0/C#Final_Project.pdb
+/workspaces/Js_internal_266/C#Final_Project/obj/Debug/net8.0/C#Final_Project.genruntimeconfig.cache
+/workspaces/Js_internal_266/C#Final_Project/obj/Debug/net8.0/ref/C#Final_Project.dll
